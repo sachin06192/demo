@@ -29,29 +29,4 @@
         "ship_cod": null,
         "features": []
     }
-        "is_visible": true,
-        "load_voyage": true,
-        "map_id": 227133,
-        "map_svg_url": "https://my.silversea.com/ECMFrom/ECM_258596_7803_EN.svg",
-        "images": [],
-        "voyage_highlights": "<p>\n  <strong>Day 1 — Ushuaia, Argentina</strong><br />\n  Embark <em>Silver Explorer</em>, settle in and attend a mandatory safety drill before leaving port. During the afternoon you will be introduced to some of the important crew members and your Expedition Team. At sail-away bid farewell to Tierra del Fuego, the ‘</p>",
-        "voyage_url": "https://shop.silversea.com/api/v1/voyages/v/7803",
-        "voyage_cod": "7803",
-        "voyage_name": "Ushuaia to Ushuaia",
-        "voyage_market_name": "",
-        "depart_date": "2018-02-15T00:00:00.000Z",
-        "arrive_date": "2018-02-25T00:00:00.000Z",
-        "itinerary_url": "https://shop.silversea.com/api/v1/voyages/v/7803/itinerary",
-        "days": 10,
-        "destination_id": 10,
-        "destination_url": "https://shop.silversea.com/api/v1/destinations/10",
-        "ship_id": 2,
-        "ship_url": "https://shop.silversea.com/api/v1/ships/E1",
-        "map_url": "https://my.silversea.com/ECMFrom/ECM_252028_7803_EN.jpg",
-        "is_expedition": true,
-        "voyage_description": "",
-        "voyage_id": 4385,
-        "ship_cod": null,
-        "features": []
-    }
 ]
