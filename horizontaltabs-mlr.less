@@ -1,0 +1,129 @@
+ .cmp-tabs--horizontaltabs-mlr.tabs {
+     @media screen and (min-width: @cg-breakpoint-md ) {
+         >.cmp-tabs {
+
+             >.cmp-tabs__groupList {
+                 >.cmp-tabs__group {
+                     max-width: 100%;
+                     width: 100%;
+
+                     >.cmp-tabs__tablist {
+                         display: flex;
+                         flex-flow: row wrap;
+
+                         >li.cmp-tabs__tab--active>div.cmp-tabs__tabpanel--active {
+                             padding-top: 40px
+                         }
+
+                         >.cmp-tabs__tab {
+                             flex: 1;
+
+                             >.cmp-tabs__container {
+                                 margin-right: 0 !important;
+                            
+                                 >.cmp-tabs__content {
+                                    text-align: center;
+                                     >.cmp-tabs__title {
+                                         font-size: 22px;
+                                         line-height: 30/22;
+                                         .mixin-font-typeface(@cg-font-regular);
+                                         padding: 2px 2px;
+                                         display: inline-block;
+                                         border-bottom: 4px solid transparent;
+                                         transition: border-bottom 0.3s ease;
+                                     }
+
+                                     >div.cmp-tabs__underline {
+                                         width: 300px;
+                                         margin: 0 auto;
+                                         display: none;
+                                     }
+                                 }
+                             }
+
+                             >.cmp-tabs__tabpanel {
+                                 width: 100%;
+                                 padding-bottom: 0 !important;
+                                 overflow: visible;
+                                 > .responsivegrid 
+                                 {
+                                    width: 100%;
+                                 }
+                             }
+
+                             &.cmp-tabs__tab--active {
+                                 >.cmp-tabs__container {
+                                     >.cmp-tabs__content {
+                                         >.cmp-tabs__title {
+                                             .mixin-font-typeface(@cg-font-demibold);
+                                             border-bottom: 3px solid @cg-primary-ocean;
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+
+     @media screen and (max-width: (@cg-breakpoint-md - 1)) {
+         >div.cmp-tabs {
+             padding-bottom: 45px;
+             width: 100%;
+             max-width: 100%;
+         }
+     }
+
+     @media screen and (max-width: (@cg-breakpoint-md - 1)) {
+         .cmp-tabs ul.cmp-tabs__tablist li.cmp-tabs__tab div.cmp-tabs__tabpanel {
+             overflow: visible;
+         }
+
+         >div.cmp-tabs {
+             width: 100%;
+             max-width: 100%;
+
+             >.cmp-tabs__groupList {
+                 >.cmp-tabs__group {
+                     width: 100%;
+
+                     >.cmp-tabs__tablist {
+                         >.cmp-tabs__tab {
+                             > div.cmp-tabs__tabpanel--active 
+                             {
+                                margin-top: 0;
+                             }
+                             >.cmp-tabs__container {
+                                 display: flex;
+                                 align-items: center;
+                                 padding: 16px 0;
+
+                                 >.cmp-tabs__content {
+                                     margin-left: 0;
+                                     flex: 1;
+                                     >.cmp-tabs__title {
+                                         .mixin-font-typeface(@cg-font-regular);
+                                         font-size: 18px;
+                                         line-height: 25px;
+                                     }
+
+                                     &+.cmp-tabs__icon {
+                                         margin-right: 0;
+                                     }
+                                 }
+                             }
+
+                             &.cmp-tabs__tab--active {
+                                 >div.cmp-tabs__tabpanel--active {
+                                    padding-top: 0;
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
